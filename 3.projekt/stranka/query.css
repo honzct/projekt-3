@@ -1,0 +1,43 @@
+@media (max-width: 600px) {
+  header {
+    position: relative;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  header nav li {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    background-color: var(--header-color);
+    width: 100%;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-item {
+    height: 150px;
+  }
+  .gallery-item h3 {
+    font-size: 0.8rem;
+  }
+  .weeklymenu {
+    position: relative;
+    top: 50px;
+  }
+}
+@media (min-width: 600px) {
+  header nav {
+    display: block !important;
+  }
+}
